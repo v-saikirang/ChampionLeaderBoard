@@ -1,0 +1,52 @@
+{
+    "$schema": "https://developer.microsoft.com/json-schemas/teams/v1.5/MicrosoftTeams.schema.json",
+    "manifestVersion": "1.5",
+   "id": "e0d96ecc-93c6-41cd-a574-85cccea9d76e",
+    "version": "1.0.1",
+    "packageName": "net.sharepoint.championsboard",
+    "developer": {
+      "name": "Microsoft",
+      "websiteUrl": "https://www.microsoft.com",
+      "privacyUrl": "https://privacy.microsoft.com/privacystatement",
+      "termsOfUseUrl": "https://www.microsoft.com/servicesagreement",
+      "mpnId": "1234567890"
+    },
+    "name": {
+      "short": "Champion Management Platform",
+      "full": "Champion Management Platform Program"
+    },
+    "description": {
+      "short": "Champion Management Platform for Teamwork Champions",
+      "full": "The Champion Management Platform for the Teamwork Champions program enables you to 'claim' your digital badge by overlaying it on top of your existing profile picture."
+    },
+    "icons": {
+      "outline": "icon-outline.png",
+      "color": "icon-color.png"
+    },
+    "accentColor": "#D85028",
+    "staticTabs": [
+        {
+          "entityId": "CMP",
+          "name": "CMP",    
+          "contentUrl": "https://m365x374010.sharepoint.com/_layouts/15/teamslogon.aspx?SPFX=true&dest=/sites/ChampionManagementPlatform",
+          "websiteUrl": "https:// m365x374010.sharepoint.com/sites/ChampionManagementPlatform",
+          "scopes": [ "personal" ]
+        } ,
+        {
+          "entityId": "CMP new 3",
+          "name": "CMP new 3" ,  
+          "canUpdateConfiguration": true,  
+          "contentUrl": "https://m365x374010.sharepoint.com/_layouts/15/TeamsLogon.aspx?SPFX=true&dest=/sites/ChampionManagementPlatform/_layouts/15/teamshostedapp.aspx%3FopenPropertyPane=true%26teams%26componentId=6df47bd5-d84a-41ab-8c4a-9352076e8b6c%26forceLocale={locale}",
+           "scopes": [ "personal" ]
+        }       
+
+       
+            
+          
+    ],
+    "validDomains": [
+      "*.login.microsoftonline.com",
+      "*.sharepoint.com"
+    ]
+  
+  }
